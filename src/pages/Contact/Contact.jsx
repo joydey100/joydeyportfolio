@@ -46,7 +46,7 @@ const Contact = () => {
         function (response) {
           Swal.fire({
             title: "Submitted!",
-            text: "Form submitted Successfully.",
+            text: "Form submitted Successfully. I will connect you as soon as possible.",
             icon: "success",
             confirmButtonColor: "#00CF5D",
           });
