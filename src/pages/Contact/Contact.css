@@ -1,0 +1,12 @@
+/* Contact CSS */
+.MuiFilledInput-root,
+.MuiInputLabel-root,
+.MuiInputBase-inputMultiline {
+  color: #fff !important;
+}
+form {
+  padding: 20px;
+}
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-md-7 {
+  width: 100%;
+}

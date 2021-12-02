@@ -1,0 +1,30 @@
+/* Banner CSS */
+
+.banner {
+  padding-top: 140px;
+}
+
+.banner-image {
+  max-width: 350px;
+  max-height: 350px;
+  width: 80%;
+  height: 350px;
+  border: 8px solid #fff;
+  background: #010d1b url("../../images/me.jpg");
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+}
+
+.banner-image::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  width: 100%;
+  height: 100%;
+  border: 8px solid #ddd;
+  z-index: -1;
+}

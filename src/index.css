@@ -1,13 +1,54 @@
-body {
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #010d1b;
+  overflow-x: hidden;
+}
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.auto-scroll {
+  transition: 8s ease-in-out;
+  -webkit-transition: 8s ease-in-out;
+  -moz-transition: 8s ease-in-out;
+  -ms-transition: 8s ease-in-out;
+  -o-transition: 8s ease-in-out;
+  scroll-behavior: smooth;
+}
+.auto-scroll:hover {
+  background-position: bottom;
+}
+
+/* Media Query */
+@media only screen and (max-width: 900px) {
+  .mt-4 {
+    margin-top: 20px;
+  }
+  .auto-scroll {
+    transition: 4s ease-in-out;
+    -webkit-transition: 4s ease-in-out;
+    -moz-transition: 4s ease-in-out;
+    -ms-transition: 4s ease-in-out;
+    -o-transition: 4s ease-in-out;
+  }
 }
